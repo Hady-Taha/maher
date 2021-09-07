@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+
+* {
+    font-family: 'Cairo', sans-serif;
+    font-size: large;
+}
+
+body {
+    height: 5000px;
+    background-color: #F0F2F5;
+}
+
+.ar {
+    direction: rtl;
+    text-align: right;
+}
+
+.en {
+    direction: ltr;
+    text-align: left;
+}
+
+.bg-dark{
+    background-color: #000000 !important;
+}
+/**********Start NavBar**********/
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.9s;
+    z-index: 99999;
+}
+
+
+.logo {
+    font-family: 'Rakkas',
+        cursive;
+}
+
+.nav-link-custom {
+    color: #fff !important;
+}
+
+.nav-link-custom:hover {
+
+    border-bottom: #fff solid 2px;
+}
+
+.navbar-collapse-custom {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 40s ease infinite;
+    background-size: 400% 400%;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* The progress container (grey background) */
+.progress-container {
+    width: 100%;
+    height: 8px;
+    opacity: 0;
+    background: #000000;
+    transition: all 0.4s;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 8px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    width: 0%;
+
+}
+
+
+/**********End NavBar**********/
+
+
+.Main {
+    background-color: #0099FF;
+    padding-top: 8rem;
+    position: relative;
+    padding-bottom: 8rem;
+    height: 20%;
+}
+
+
+.wave {
+    position: absolute;
+    top: 55rem;
+    z-index: -1;
+    
+}
