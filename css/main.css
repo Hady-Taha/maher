@@ -21,9 +21,12 @@ body {
     text-align: left;
 }
 
-.bg-dark{
-    background-color: #000000 !important;
-}
+
+
+
+
+
+
 /**********Start NavBar**********/
 #navbar {
     position: fixed;
@@ -34,10 +37,6 @@ body {
 }
 
 
-.logo {
-    font-family: 'Rakkas',
-        cursive;
-}
 
 .nav-link-custom {
     color: #fff !important;
@@ -55,6 +54,94 @@ body {
 
 }
 
+
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    opacity: 0;
+    background: #000000;
+    transition: all 0.4s;
+}
+
+
+.progress-bar {
+    height: 8px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    width: 0%;
+    animation: gradient 5s ease infinite;
+    background-size: 400% 400%;
+
+}
+
+/**********End NavBar**********/
+
+
+
+/**********Start Main**********/
+.Main {
+    z-index: 1;
+    background: #3a0ca3;
+    padding-top: 6rem;
+    position: relative;
+    padding-bottom: 8rem;
+    height: 20%;
+}
+
+
+.wave {
+    position: absolute;
+    top: 55rem;
+    z-index: -1;
+}
+
+
+
+.textAr {
+    font-family: 'Rakkas',
+        cursive;
+}
+
+/**********End Main**********/
+
+
+
+
+
+
+/**********Start Exmas**********/
+.Exmas{
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+    background-color: #ffffff;
+    
+    
+}
+/**********End Exmas**********/
+
+
+
+
+
+
+/**********Start Curriculum**********/
+.Curriculum{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: #ffb703;
+
+}
+
+/**********End Curriculum**********/
+
+
+
+
+
+
+
+/***gradient***/
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -68,41 +155,58 @@ body {
         background-position: 0% 50%;
     }
 }
+/***gradient***/
 
 
-/* The progress container (grey background) */
-.progress-container {
-    width: 100%;
-    height: 8px;
-    opacity: 0;
-    background: #000000;
-    transition: all 0.4s;
+
+
+
+/* TypoAnmition */
+[data-typer]:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 1em;
+    background: rgb(255, 255, 255);
+    animation: caretPulsate 1s linear infinite;
+    -webkit-animation: caretPulsate 1s linear infinite;
 }
 
-/* The progress bar (scroll indicator) */
-.progress-bar {
-    height: 8px;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    width: 0%;
+@keyframes caretPulsate {
+    0% {
+        opacity: 1;
+    }
 
+    50% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
+@-webkit-keyframes caretPulsate {
+    0% {
+        opacity: 1;
+    }
 
-/**********End NavBar**********/
+    50% {
+        opacity: 1;
+    }
 
+    60% {
+        opacity: 0;
+    }
 
-.Main {
-    background-color: #0099FF;
-    padding-top: 8rem;
-    position: relative;
-    padding-bottom: 8rem;
-    height: 20%;
+    100% {
+        opacity: 0;
+    }
 }
 
-
-.wave {
-    position: absolute;
-    top: 55rem;
-    z-index: -1;
-    
-}
+/* TypoAnmition */
