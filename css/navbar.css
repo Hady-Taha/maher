@@ -1,0 +1,46 @@
+/**********Start NavBar**********/
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.9s;
+    z-index: 99999;
+}
+
+
+.nav-link-custom {
+    color: #fff !important;
+}
+
+.nav-link-custom:hover {
+    border-bottom: #fff solid 2px;
+    transition: all 0.5s;
+}
+
+.navbar-collapse-custom {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 40s ease infinite;
+    background-size: 400% 400%;
+
+}
+
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    opacity: 0;
+    background: #000000;
+    transition: all 0.4s;
+}
+
+
+.progress-bar {
+    height: 8px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    width: 0%;
+    animation: gradient 5s ease infinite;
+    background-size: 400% 400%;
+
+}
+
+/**********End NavBar**********/
