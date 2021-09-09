@@ -53,11 +53,49 @@
 .Q-A {
     padding-top: 5rem;
     padding-bottom: 5rem;
-  
+
 }
 
 
 /**********End Q-A**********/
+
+
+/**********Start Q-A**********/
+.Books {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-image: url('../image/5566879.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+/**********End Q-A**********/
+
+
+/**********Start exams_category**********/
+
+.exams_category {
+    z-index: 1;
+    background-image: url('../image/5566879.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 3rem;
+    position: relative;
+    padding-bottom: 8rem;
+    height: 60em;
+}
+
+
+
+/**********End exams_category**********/
+
+
+
+
 
 
 

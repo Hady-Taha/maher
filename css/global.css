@@ -43,7 +43,6 @@ body {
 .custom-card {
     padding: 0.5rem;
     border-radius: 12px;
-   
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 3s ease infinite;
@@ -53,7 +52,7 @@ body {
 .custom-card-body {
     border-radius: 5px;
     padding: 2rem;
-    background-color: #F0F2F5;
+    background-color: #ffffff;
     color: #333 !important;
 
 }
